@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <script
+      src="https://kit.fontawesome.com/2d9b67a497.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- top navigation bar -->
+    <nav class="navigation-bar">
+      <!--This div contains the logo and title of the page-->
+      <div class="title-combo">
+        <div class="website-logo">
+          <img src="images/logo.png" />
+        </div>
+        <div class="website-name">
+          <h2>
+            SPOTIFY
+          </h2>
+          <h6>
+            Music Player
+          </h6>
+        </div>
+      </div>
+      <!-- this is the animated favourites text -->
+      <div class="favs">
+        <h4>
+          Favourites
+        </h4>
+      </div>
+      <!-- this is for search bar -->
+      <div class="search-bar">
+        <div>
+          <!-- magnifying glass- search icon -->
+          <i class="fas fa-search search-ico"></i>
+        </div>
+        <input type="text" name="search" placeholder="Search" />
+        <div>
+          <!-- mic icon -->
+          <i class="fas fa-microphone mic-ico"></i>
+        </div>
+      </div>
+      <!-- this is for notification bell -->
+      <div class="notification-bell">
+        <img src="images/bell_icon.png" /> Notifications
+      </div>
+      <!-- this is for profile picture -->
+      <div class="profile-picture">
+        <img src="images/profile.jpg" />
+      </div>
+    </nav>
+
+    <!-- container with music choices-->
+    <section id="main-container">
+      <div id="playlist">
+        <div class="carousal">
+          <div>
+            <img src="images/carousel1.jpg" alt="" />
+          </div>
+          <div><img src="images/carousel2.jpg" alt="" /></div>
+          <div><img src="images/carousel3.jpg" alt="" /></div>
+        </div>
+        <h1 style="margin: 12px 0px 12px 19px;">
+          Latest Release
+        </h1>
+        <div id="latest-release">
+          <div class="latest-music">
+            <img src="images/songs/dynamite.jpg" alt="" />
+            <div class="play-button">
+              <i
+                class="fas fa-play"
+                style="width: 45%; height: 45%; display: inline-block;"
+              ></i>
+            </div>
+            <div class="song-des">
+              <h2>dynamite</h2>
+              <p>December 2020</p>
+            </div>
+
+            <div class="options">
+              <label for="latest-release-checkbox"
+                ><i class="fas fa-ellipsis-h"></i
+              ></label>
+              <input type="checkbox" id="latest-release-checkbox" />
+              <div class="latest-release-dropdown">
+                <div class="drop-item">
+                  <!-- if user clicks on play now button, he/she will be taken to the single playlist page -->
+                  <p>
+                    <i class="fas fa-play-circle"></i>
+                    <a href="Single Playlist Screen.html">Play Now</a>
+                  </p>
+                </div>
+                <hr />
+                <div class="drop-item">
+                  <p><i class="fas fa-list-ul"></i> Add to Queue</p>
+                </div>
+                <hr />
+                <div class="drop-item">
+                  <p><i class="fas fa-music"></i> Add to playlist</p>
+                </div>
+                <hr />
+                <div class="drop-item">
+                  <p><i class="fas fa-info-circle"></i> Get Info</p>
+                </div>
+              </div>
+              <!-- duration of the song -->
+              <p>
+                3:35
+              </p>
+            </div>
+          </div>
+          <div class="latest-music">
+            <img src="images/songs/DaBaby.jpg" alt="" />
+            <div class="play-button">
+              <i
+                class="fas fa-play"
+                style="width: 45%; height: 45%; display: inline-block;"
+              ></i>
+            </div>
+            <div class="song-des">
+              <h2>Da Baby</h2>
+              <p>December 2020</p>
+            </div>
+            <div class="options">
+              <label for="latest-release-checkbox2"
+                ><i class="fas fa-ellipsis-h"></i
+              ></label>
+              <input type="checkbox" id="latest-release-checkbox2" />
+              <div class="latest-release-dropdown">
+                <div class="drop-item">
+                  <!-- if user clicks on play now button, he/she will be taken to the single playlist page -->
+                  <p>
+                    <i class="fas fa-play-circle"></i>
+                    <a href="Single Playlist Screen.html">Play Now</a>
+                  </p>
+                </div>
+                <hr />
+                <div class="drop-item">
+                  <p><i class="fas fa-list-ul"></i> Add to Queue</p>
+                </div>
+                <hr />
+                <div class="drop-item">
+                  <p><i class="fas fa-music"></i> Add to playlist</p>
+                </div>
+                <hr />
+                <div class="drop-item">
+                  <p><i class="fas fa-info-circle"></i> Get Info</p>
+                </div>
+              </div>
+              <!-- duration of the song -->
+              <p>
+                3:35
+              </p>
+            </div>
+          </div>
+          <div class="latest-music">
+            <img src="images/songs/shit.png" alt="" />
+            <div class="play-button">
+              <i
+                class="fas fa-play"
+                style="width: 45%; height: 45%; display: inline-block;"
+              ></i>
+            </div>
+            <div class="song-des">
+              <h2>Shit</h2>
+              <p>December 2020</p>
+            </div>
+            <div class="options">
+              <label for="latest-release-checkbox3"
+                ><i class="fas fa-ellipsis-h"></i
+              ></label>
+              <input type="checkbox" id="latest-release-checkbox3" />
+              <div class="latest-release-dropdown">
+                <div class="drop-item">
+                  <!-- if user clicks on play now button, he/she will be taken to the single playlist page -->
+                  <p>
+                    <i class="fas fa-play-circle"></i>
+                    <a href="Single Playlist Screen.html">Play Now</a>
+                  </p>
+                </div>
+                <hr />
+                <div class="drop-item">
+                  <p><i class="fas fa-list-ul"></i> Add to Queue</p>
+                </div>
+                <hr />
+                <div class="drop-item">
+                  <p><i class="fas fa-music"></i> Add to playlist</p>
+                </div>
+                <hr />
+                <div class="drop-item">
+                  <p><i class="fas fa-info-circle"></i> Get Info</p>
+                </div>
+              </div>
+              <!-- duration of the song -->
+              <p>
+                3:35
+              </p>
+            </div>
+          </div>
+          <div class="latest-music">
+            <img src="images/songs/willow.jpeg" alt="" />
+            <div class="play-button">
+              <i
+                class="fas fa-play"
+                style="width: 45%; height: 45%; display: inline-block;"
+              ></i>
+            </div>
+            <div class="song-des">
+              <h2>Willow</h2>
+              <p>December 2020</p>
+            </div>
+            <div class="options">
+              <label for="latest-release-checkbox4"
+                ><i class="fas fa-ellipsis-h"></i
+              ></label>
+              <input type="checkbox" id="latest-release-checkbox4" />
+              <div class="latest-release-dropdown">
+                <div class="drop-item">
+                  <!-- if user clicks on play now button, he/she will be taken to the single playlist page -->
+                  <p>
+                    <i class="fas fa-play-circle"></i>
+                    <a href="Single Playlist Screen.html">Play Now</a>
+                  </p>
+                </div>
+                <hr />
+                <div class="drop-item">
+                  <p><i class="fas fa-list-ul"></i> Add to Queue</p>
+                </div>
+                <hr />
+                <div class="drop-item">
+                  <p><i class="fas fa-music"></i> Add to playlist</p>
+                </div>
+                <hr />
+                <div class="drop-item">
+                  <p><i class="fas fa-info-circle"></i> Get Info</p>
+                </div>
+              </div>
+              <!-- duration of the song -->
+              <p>
+                3:35
+              </p>
+            </div>
+          </div>
+          <div class="latest-music">
+            <img src="images/songs/Weeknd.jpg" alt="" />
+            <div class="play-button">
+              <i
+                class="fas fa-play"
+                style="width: 45%; height: 45%; display: inline-block;"
+              ></i>
+            </div>
+            <div class="song-des">
+              <h2>Weekend</h2>
+              <p>December 2020</p>
+            </div>
+            <div class="options">
+              <label for="latest-release-checkbox5"
+                ><i class="fas fa-ellipsis-h"></i
+              ></label>
+              <input type="checkbox" id="latest-release-checkbox5" />
+              <div class="latest-release-dropdown">
+                <div class="drop-item">
+                  <!-- if user clicks on play now button, he/she will be taken to the single playlist page -->
+                  <p>
+                    <i class="fas fa-play-circle"></i>
+                    <a href="Single Playlist Screen.html">Play Now</a>
+                  </p>
+                </div>
+                <hr />
+                <div class="drop-item">
+                  <p><i class="fas fa-list-ul"></i> Add to Queue</p>
+                </div>
+                <hr />
+                <div class="drop-item">
+                  <p><i class="fas fa-music"></i> Add to playlist</p>
+                </div>
+                <hr />
+                <div class="drop-item">
+                  <p><i class="fas fa-info-circle"></i> Get Info</p>
+                </div>
+              </div>
+              <!-- duration of the song -->
+              <p>
+                3:35
+              </p>
+            </div>
+          </div>
+          <div class="latest-music">
+            <img src="images/songs/falling.jpg" alt="" />
+            <div class="play-button">
+              <i
+                class="fas fa-play"
+                style="width: 45%; height: 45%; display: inline-block;"
+              ></i>
+            </div>
+            <div class="song-des">
+              <h2>Falling</h2>
+
+              <p>December 2020</p>
+            </div>
+            <div class="options">
+              <label for="latest-release-checkbox6"
+                ><i class="fas fa-ellipsis-h"></i
+              ></label>
+              <input type="checkbox" id="latest-release-checkbox6" />
+              <div class="latest-release-dropdown">
+                <div class="drop-item">
+                  <!-- if user clicks on play now button, he/she will be taken to the single playlist page -->
+                  <p>
+                    <i class="fas fa-play-circle"></i>
+                    <a href="Single Playlist Screen.html">Play Now</a>
+                  </p>
+                </div>
+                <hr />
+                <div class="drop-item">
+                  <p><i class="fas fa-list-ul"></i> Add to Queue</p>
+                </div>
+                <hr />
+                <div class="drop-item">
+                  <p><i class="fas fa-music"></i> Add to playlist</p>
+                </div>
+                <hr />
+                <div class="drop-item">
+                  <p><i class="fas fa-info-circle"></i> Get Info</p>
+                </div>
+              </div>
+              <!-- duration of the song -->
+              <p>
+                3:35
+              </p>
+            </div>
+          </div>
+        </div>
+        <h1 style="margin: 12px 0px 12px 19px;">
+          Popular Artists
+        </h1>
+        <div id="popular-artist">
+          <div class="artist-display">
+            <img src="images/popular_artists/bruno mars.jpg" alt="" />
+            <p>Bruno</p>
+            <div class="play-button">
+              <i
+                class="fas fa-play"
+                style="width: 45%; height: 45%; display: inline-block;"
+              ></i>
+            </div>
+          </div>
+          <div class="artist-display">
+            <img src="images/popular_artists/adele.jpg" alt="" />
+            <p>Adele</p>
+            <div class="play-button">
+              <i
+                class="fas fa-play"
+                style="width: 45%; height: 45%; display: inline-block;"
+              ></i>
+            </div>
+          </div>
+          <div class="artist-display">
+            <img src="images/popular_artists/Camila Cabello.jpg" alt="" />
+            <p>Camila</p>
+            <div class="play-button">
+              <i
+                class="fas fa-play"
+                style="width: 45%; height: 45%; display: inline-block;"
+              ></i>
+            </div>
+          </div>
+          <div class="artist-display">
+            <img src="images/popular_artists/billie eilish.jpg" alt="" />
+            <p>Billie</p>
+            <div class="play-button">
+              <i
+                class="fas fa-play"
+                style="width: 45%; height: 45%; display: inline-block;"
+              ></i>
+            </div>
+          </div>
+          <div class="artist-display">
+            <img src="images/popular_artists/drake.jpg" alt="" />
+            <p>Drake</p>
+            <div class="play-button">
+              <i
+                class="fas fa-play"
+                style="width: 45%; height: 45%; display: inline-block;"
+              ></i>
+            </div>
+          </div>
+
+          <div class="artist-display">
+            <img src="images/popular_artists/eminem.jpg" alt="" />
+            <p>Eminem</p>
+            <div class="play-button">
+              <i
+                class="fas fa-play"
+                style="width: 45%; height: 45%; display: inline-block;"
+              ></i>
+            </div>
+          </div>
+
+          <div class="artist-display">
+            <img src="images/popular_artists/Katy perry.jpg" alt="" />
+            <p>Katty</p>
+            <div class="play-button">
+              <i
+                class="fas fa-play"
+                style="width: 45%; height: 45%; display: inline-block;"
+              ></i>
+            </div>
+          </div>
+        </div>
+
+        <div id="music-theme">
+          <div id="station">
+            <div id="div1">
+              <div id="div2">
+                <div id="div3">
+                  <i
+                    class="fas fa-play"
+                    style="width: 40%; height: 40%; display: inline-block;"
+                  ></i>
+                  <h2><strong>Stations</strong></h2>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="music-blocks">
+            <div class="music-mood">
+              <img src="images/music_themes/chill.jpg" alt="" />
+            </div>
+            <div class="music-mood">
+              <img src="images/music_themes/love.jpg" alt="" />
+            </div>
+            <div class="music-mood">
+              <img src="images/music_themes/pop.jpg" alt="" />
+            </div>
+            <div class="music-mood">
+              <img src="images/music_themes/workout.jpg" alt="" />
+            </div>
+            <div class="music-mood">
+              <img src="images/music_themes/retro.jpg" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="queue"></div>
+    </section>
+  </body>
+</html>

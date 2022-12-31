@@ -1,0 +1,450 @@
+:root {
+  --white: white;
+  --bgcolor: #0c1027;
+  --cyan: aqua;
+  --font: "Ubuntu", sans-serif;
+  --lightgray: lightgray;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+body {
+  background-color: var(--bgcolor);
+  background-image: url("images/bg.jpg");
+  background-blend-mode: overlay;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0px;
+}
+/* removing all the styles from the links and formatting them white */
+a {
+  text-decoration: none;
+  color: white;
+}
+/* top navigation bar */
+.navigation-bar {
+  height: auto;
+  width: auto;
+  background-image: linear-gradient(180deg, black, rgba(0, 0, 0, 0));
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  padding-left: 5%;
+  padding-right: 5%;
+  transition: all ease-in-out 1s; /* when the navbar loads, every property transits for 1s */
+}
+/* all the divs inside the navigation bar should be placed side by side*/
+.navigation-bar > div {
+  display: inline-block;
+}
+/* animation for the website logo */
+@keyframes rotating {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+/* website logo image */
+.website-logo img {
+  height: 50px;
+  width: 50px;
+  border-radius: 100%;
+}
+.website-logo img:hover {
+  animation: rotating 2s ease-in-out alternate infinite;
+}
+/* website function */
+.website-name h4 {
+  color: rgb(80, 220, 255);
+}
+/* website title and general description */
+.title-combo > div {
+  vertical-align: middle;
+  display: inline-block;
+}
+/* animation for favoutites text */
+@keyframes flexible {
+  75% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scaleX(1);
+  }
+}
+/* favourites text */
+.favs:hover {
+  animation-name: flexible;
+  animation-timing-function: ease-in-out;
+  animation-duration: 2s;
+  perspective: 10000px;
+  transform-style: preserve-3d;
+  animation-iteration-count: infinite;
+}
+/* search bar */
+.search-bar {
+  width: 20%;
+  position: relative;
+}
+/* changing the default style of the input bar */
+.search-bar input {
+  width: 100%;
+  font-size: 16px;
+  text-decoration: none;
+  border-radius: 18px;
+  border: none;
+  padding: 5px;
+  font-weight: 500;
+  text-align: center;
+  transition: all ease-in-out 0.1s;
+}
+/* search icon for input bar */
+.search-ico {
+  color: rgba(0, 0, 0, 0.5);
+}
+/* mic icon for input */
+.mic-ico {
+  color: rgba(0, 0, 0, 0.5);
+}
+/* search icon */
+.search-bar > div:nth-child(1) {
+  display: inline-block;
+  position: absolute;
+  width: min-content;
+  left: 5%;
+  top: 10%;
+  transition: all ease-in-out 0.1s;
+}
+/* mic icon */
+.search-bar > div:nth-child(3) {
+  display: inline-block;
+  position: absolute;
+  width: min-content;
+  right: 0%;
+  top: 10%;
+  transition: all ease-in-out 0.1s;
+}
+/* when the user clicks on the search bar, there should be no blue outlining */
+input:focus {
+  outline: none;
+}
+/* animation for bell image */
+@keyframes ringing_bell {
+  0% {
+    transform: rotate(-15deg);
+  }
+  50% {
+    transform: rotate(15deg);
+  }
+  100% {
+    transform: rotate(-15deg);
+  }
+}
+
+/* notification bell image */
+.notification-bell img {
+  width: 40px;
+  height: 30px;
+  animation-name: ringing_bell;
+  animation-duration: 0.4s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-delay: 10s;
+  position: first;
+}
+
+/* profile picture of the user */
+.profile-picture img {
+  width: 80px;
+  height: 80px;
+  border-radius: 100%;
+  margin-top: 15px;
+}
+.profile-picture:hover {
+  background-image: url("images/logo.png");
+}
+
+/* main container */
+
+#main-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+#playlist {
+  width: 75%;
+  height: auto;
+  /* border:1px solid white; */
+
+  padding-top: 1rem;
+}
+#queue {
+  width: 25%;
+  height: auto;
+  /* border:1px solid white; */
+}
+.carousal {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 1rem;
+  overflow: hidden;
+}
+.carousal > div {
+  overflow: hidden;
+  margin-left: 2rem;
+  margin-right: 1rem;
+}
+.carousal img {
+  width: 20rem;
+  height: 20rem;
+  border-radius: 4%;
+  transition: transform 1s;
+  animation: zoom 3s ease-in-out alternate infinite;
+}
+
+@keyframes zoom {
+  0% {
+    transform: scale(1.1);
+  }
+}
+.carousal img:hover {
+  border-radius: 4%;
+  transform: scale(1.5);
+}
+
+#latest-release {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: row;
+  align-items: center;
+  /* border:1px solid white; */
+  width: auto;
+  margin-bottom: 10px;
+}
+.latest-music {
+  margin: 0.8rem;
+  width: 28rem;
+  height: 7rem;
+  /* border: 1px solid white;  */
+  /* overflow: hidden; */
+  transition: box-shadow 0.2s;
+  display: flex;
+  justify-content: row;
+}
+.latest-music img {
+  float: left;
+  width: 30%;
+  height: 100%;
+}
+
+.latest-music:hover {
+  box-shadow: 0px 0px 2px 2px white;
+}
+.latest-music:nth-child(2n) {
+  margin-left: 4rem;
+}
+.song-des {
+  margin: 1rem;
+  margin-left: 3rem;
+}
+.song-des h2,
+p {
+  line-height: 2.6rem;
+}
+.play-button {
+  width: 30%;
+  height: 100%;
+  margin-left: -8.5rem;
+
+  color: rgba(255, 255, 255, 0);
+  /* note that its opacity will be 0 normally */
+  background-color: rgba(0, 0, 0, 0);
+  font-size: 0px;
+  padding-top: 9%;
+  text-align: center;
+  transition: all ease-in-out 0.1s;
+}
+
+/* hovering effect for the play button */
+.play-button:hover {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.latest-music img:hover {
+  opacity: 1;
+}
+
+.options {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap-reverse;
+  text-align: right;
+  margin-left: auto;
+  margin-right: 2%;
+  margin-top: 2%;
+}
+/* this is for the latest release drop down menu */
+.latest-release-dropdown {
+  position: absolute;
+  background-color: darkslateblue;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  opacity: 0;
+  width: 0px;
+  height: 0px;
+  top: 20px;
+  right: 0px;
+  overflow: hidden;
+  z-index: 2;
+  border: 1px solid black;
+  box-shadow: 0px 0px 2px 1px black;
+  transition: all ease-in-out 0.3s;
+}
+.fa-ellipsis-h {
+  cursor: pointer;
+}
+/* this input is for the latest release drop down */
+input[type="checkbox"] {
+  display: none;
+}
+/* checking it, will trigger the latest release dropdown */
+input[type="checkbox"]:checked ~ .latest-release-dropdown {
+  width: max-content;
+  height: auto;
+  opacity: 1;
+  padding: 5px;
+}
+/* options in the lastest release drop down */
+.drop-item p {
+  text-align: center;
+}
+
+/* popular artist section */
+#popular-artist {
+  width: 100%;
+  height: 14%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+.artist-display {
+  margin: 0.6rem;
+}
+.artist-display img {
+  width: 125px;
+  border-radius: 50%;
+
+  display: block;
+}
+.artist-display p {
+  align-items: center;
+  margin: 0.3rem;
+  padding-left: 2rem;
+}
+.artist-display .play-button {
+  width: 6rem;
+  height: 6rem;
+  margin-top: -9.5rem;
+  margin-left: 1.2rem;
+}
+.artist-display .play-button:hover {
+  color: white;
+  background-color: transparent;
+}
+#music-theme {
+  width: 100%;
+  height: auto;
+  background-image: linear-gradient(90deg, #833ab4, #fd1d1d, #fcb045);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 6rem;
+}
+#station {
+  width: 27%;
+  height: 87%;
+  margin: 1rem;
+  margin-top: 2rem;
+  display: block;
+}
+#div1 {
+  position: relative;
+  width: 100%;
+  height: 70%;
+  border: 1px solid black;
+  background-color: darkblue;
+  margin-top: 3rem;
+  display: block;
+}
+#div2 {
+  margin: 1rem;
+  height: 16rem;
+  width: 15rem;
+  margin-top: -2rem;
+  margin-left: 0.8rem;
+  background-color: aquamarine;
+  display: block;
+}
+#div3 {
+  position: relative;
+  top: -1vw;
+  left: 2vw;
+  width: 12vw;
+  height: 19vw;
+  background-color: orange;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#div3 .fa-play,
+h2 {
+  animation: zoom 1s ease-in-out alternate infinite;
+}
+#music-blocks {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 69%;
+  height: 100%;
+}
+.music-mood img {
+  border-radius: 50%;
+  height: 7rem;
+  width: 7rem;
+  margin: 0.4rem;
+  margin-top: 2rem;
+}
+.music-mood:nth-child(2n) {
+  margin-top: 20%;
+}
